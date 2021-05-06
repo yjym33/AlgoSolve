@@ -6,7 +6,7 @@
 #### 해시
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 테스트 코드 | 설명 |
 |-|-|-|-|-|-|-|
-| [링크](https://programmers.co.kr/learn/courses/30/lessons/42576) | 완주하지 못한 선수 | Level 1 | HashMap | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson42576/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson42576/SolutionTest.java) | [링크](docs/programers-lesson-42576.md) |
+| [링크](https://programmers.co.kr/learn/courses/30/lessons/42576) | 완주하지 못한 선수 | Level 1 | HashMap ||  | [링크](docs/programers-lesson-42576.md) |
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42577) | 전화번호 목록 | Level 2 | HashMap | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson42577/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson42577/SolutionTest.java) | |
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42578) | 위장 | Level 2 | HashMap | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson42578/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson42578/SolutionTest.java) | |
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42579) | 베스트 앨범 | Level 3 | HashMap | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson42579/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson42579/SolutionTest.java) | |
@@ -127,8 +127,3 @@
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/68936) | 쿼드압축 후 개수 세기 | Level 2 | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson68936/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson68936/SolutionTest.java) | |
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/68937) | 트리 트리오 중간 값 | Level 4 | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson68937/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson68937/SolutionTest.java) | |
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/70130) | 스타 수열 | Level 3 | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson70130/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson70130/SolutionTest.java) | [링크](https://hirlawldo.tistory.com/49)|
-
-### 찾아라 프로그래밍 마에스터
-| 문제 | 제목 | 레벨 | 소스 코드 | 테스트 코드 | 설명 |
-|-|-|-|-|-|-|
-| [링크](https://programmers.co.kr/learn/courses/30/lessons/1844) | 게임 맵 최단거리 | Level 4 | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/main/java/programmers/courses30/lesson1844/Solution.java) | [링크](https://github.com/jiaekim123/algorithm-integrated/blob/master/src/test/java/programmers/courses30/lesson1844/SolutionTest.java) | |
