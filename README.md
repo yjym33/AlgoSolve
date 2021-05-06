@@ -7,6 +7,7 @@ https://solved.ac/class
 
 https://github.com/tony9402/baekjoon
 (tony9402 님이 정리한 출제 가능성 높은 백준 유형별 문제정리)
+[유형별로 난이도 실버3 ~ 골드1 문제 풀기]
 
 https://programmers.co.kr/learn/challenges
 (프로그래머스 - 고득점 Kit)
