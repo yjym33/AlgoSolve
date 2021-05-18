@@ -1,4 +1,7 @@
 # queue 사용을 위해 deque 선언
+
+# BFS 풀이방식
+
 from collection import deque
 
 n = int(input()) # 컴퓨터의 수
