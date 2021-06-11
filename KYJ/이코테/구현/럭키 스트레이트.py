@@ -36,7 +36,7 @@ else:
     print("READY")
 
 
-# 풀이 2 (슬라이스 활용하는 문제)
+# 풀이 2 (슬라이스 활용하는 방법)
 
 num = input()
 n = len(num) // 2
