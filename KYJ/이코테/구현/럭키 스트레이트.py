@@ -15,7 +15,7 @@
 
 # 입력 예시 1 : 123402                                                  출력 예시 1 : LUCKY
 
-# 풀이
+풀이 1 (책 풀이)
 
 n = input()
 length = len(n)  # 점수값의 총 자리수
@@ -31,6 +31,23 @@ for i in range(length // 2, length):
 
 # 왼쪽 부분과 오른쪽 부분의 자릿수 합이 동일한지 검사
 if summary == 0:
+    print("LUCKY")
+else:
+    print("READY")
+
+
+# 풀이 2 (슬라이스 활용하는 문제)
+
+num = input()
+n = len(num) // 2
+a = 0
+b = 0
+
+for i in num[:n]:
+    a += int(i)
+for i in num[n:]:
+    b += int(i)
+if a == b:
     print("LUCKY")
 else:
     print("READY")
