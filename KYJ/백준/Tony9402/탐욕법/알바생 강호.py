@@ -13,7 +13,7 @@ rate = 1 #등수 초기화
 result = 0 #결과값 초기화
 for i in tip:
     if (i - (rate-1)) >= 0: #(주려고생각한 팁 - (받은등수 - 1)) 이 음수가 아닌 경우만 알고리즘 생성
-        result = result + (i - (rate-1))
+        result = result + (i - (rate-1))ㅌ 
         rate += 1
     else:
         continue
