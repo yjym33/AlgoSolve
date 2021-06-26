@@ -28,8 +28,26 @@
 #4 NO
 #5 YES
 
-N = int(input())
+# 파이썬스럽게 짠 코드 (손코딩 X)
+n = int(input())
 for i in range(n):
     s = input()
-    
+    s = s.upper()
+    if s == s[::-1]:
+        print("#%d YES" %(i+1))
+    else:
+        print("#%d NO" %(i+1))
 
+
+
+# 직접 비교하여 비교할 경우 (손코딩 O)
+n = int(input())
+for i in range(n):
+    s = input()
+    s = s.upper()
+    size = len(s)
+    for j in range(size//2):
+        if s[j] != s[-1-j]:
+            print("#%d NO" %(i+1))
+    else:        
+        print("#%d YES" %(i+1))
