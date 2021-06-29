@@ -5,7 +5,7 @@ import sys
 input = sys.stdin.readline
 n = int(input())
 m = int(input())
-board = [[0 for _ in range(n)] for _ in range(n)]
+board = [[0 for _ in range(n)] for _ in range(n)] # 2차원 배열을 담기 위한 리스트 컴프리핸션
 
 dr = [0, 1, 0, -1] # 오른쪽, 아래, 왼쪽, 위쪽 순서대로 
 dc = [1, 0, -1, 0]
