@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>세 수중 최솟값</title>
+</head>
+<body>
+    <script>
+        function solution(a, b, c){
+            let answer;
+            if(a < b) answer = a;
+            else answer = b;
+            if (c < answer) answer = c;
+            return answer;
+        }
+
+        console.log(solution(6, 5, 11))
+    </script>
+</body>
+</html>
+
+<!-- 세 수중 최솟값 문제 풀이-->
