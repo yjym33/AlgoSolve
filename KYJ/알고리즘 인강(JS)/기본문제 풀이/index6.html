@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>내장함수로 최댓값,최솟값 구하기</title>
+</head>
+<body>
+    <script>
+       function solution(arr) {
+           let answer=Math.min(...arr); // ... : Spread Operator (배열을 펼쳐준다.) >> (arr[0], arr[1], arr[2] ... )
+        //    let answer=Math.min.apply(null, arr); [Spread Operator을 사용하지 않고 구할떄, Math.min.apply(null, arr)]
+           console.log(Math.max(...arr));
+           return answer;
+
+       }
+       let arr = [5, 7, 1, 3, 2, 9, 11]
+       console.log(solution(arr))
+    </script>
+</body>
+</html>
