@@ -7,6 +7,27 @@
 <body>
     <script>
        function solution(s) {
+           let answer = s.toUpperCase();
+           return answer;
+           
+       }
+
+       let str = "ItisTimeToStudy"
+       console.log(solution(str));
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>대문자로 통일</title>
+</head>
+<body>
+    <script>
+       function solution(s) {
            let answer = "";
            for(let x of s){
                if (x===x.toLowerCase()) answer+=x.toUpperCase(); // 소문자인 경우
@@ -21,8 +42,6 @@
     </script>
 </body>
 </html>
-
-<!-- 문자열을 입력받고 해당 문자열을 전부 대문자로 변환하여 출력하는 문제 -->
 
 
 <!-- 아스키코드로 문제 풀이  -->
