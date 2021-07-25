@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가장 긴 문자열</title>
+</head>
+<body>
+    <script>
+       function solution (s) {
+           let answer, max=Number.MIN_SAFE_INTEGER; // Max는 초기화할때 가장 작은 값 Number.Min_SAFE_INTEGER로 초기화하는것이 좋음
+           for (let x of s) {
+            if (x.length>max) {
+                max =x.length;
+                answer = x;
+            }
+           }
+
+           return answer;
+       }
+       let str = ["teacher", "time", "beautiful", "good"];
+       console.log(solution(str))
+    </script>
+</body>
+</html>
+
+<!-- N개의 문자열이 입력되면 그중 가장 긴 문자열을 출력하는 프로그램을 작성하는 문제 -->
