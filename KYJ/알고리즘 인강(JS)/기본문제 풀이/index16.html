@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가운데 문자 출력</title>
+</head>
+<body>
+    <script>
+       function solution(s) {
+           let answer;
+           let mid = Math.floor(s.length/2)
+           if(s.length%2 == 1) answer=s.substring(mid, mid+1) // 홀수인 경우, substring(mid, mid+1) 
+           else answer = s.substring(mid-1, mid+1) // 짝수일 경우, substring(mid-1, mid+1)
+
+           return answer;
+       }
+       console.log(solution("length"))
+    </script>
+</body>
+</html>
+
+<!-- 소문자 문자열이 입력되면 그 단어의 가운데 문자를 출력하는 프로그램을 작성하는 문제입니다. 단 단어의 길이가 짝수일 경우 가운데 2개의 문자 출력 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가운데 문자 출력</title>
+</head>
+<body>
+    <script>
+       function solution(s) {
+           let answer;
+           let mid = Math.floor(s.length/2)
+           if(s.length%2 == 1) answer=s.substr(mid, 1) // 홀수인 경우, substr(mid, 1) , substr은 첫번째 인덱스에서 부터 몇개까지 자를지 뒤에 선택
+           else answer = s.substr(mid-1, 2) // 짝수일 경우, substr(mid-1, 2) 
+
+           return answer;
+       }
+       console.log(solution("length"))
+    </script>
+</body>
+</html>
