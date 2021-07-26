@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>중복 단어 제거</title>
+</head>
+<body>
+    <script>
+       function solution(s) {
+           let answer;
+           answer = s.filter(function(v, i){ // filter : 참이되는 요소만 따로 뽑아서 배열화 시킴
+               if(s.indexOf(v) === i) return true;
+               
+           });
+
+           return answer;
+       }
+       let str = ["good", "time", "good", "time", "student"];
+       console.log(solution(str));
+    </script>
+</body>
+</html>
+
+<!--  N개의 문자열이 입력되면 중복된 문자열은 제거하고 출력하는 프로그램을 작성하는 문제 -->
