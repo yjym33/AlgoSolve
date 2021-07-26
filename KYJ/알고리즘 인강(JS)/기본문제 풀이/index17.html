@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>중복 문자 제거</title>
+</head>
+<body>
+    <script>
+       function solution(s) {
+           let answer ="";
+           for(let i=0; i<s.length; i++) {
+              if(s.indexOf(s[i])=== i) answer+=s[i]
+           }
+
+
+           return answer;
+       }
+
+       console.log(solution("ksekkset"))
+    </script>
+</body>
+</html>
+
+<!--  소문자로 이루어진 한개의 문자열이 입력되면 중복된 문자를 제거하고 출력하는 프로그램을 작성하는 문제 -->

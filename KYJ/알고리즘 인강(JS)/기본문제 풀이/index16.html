@@ -32,7 +32,7 @@
        function solution(s) {
            let answer;
            let mid = Math.floor(s.length/2)
-           if(s.length%2 == 1) answer=s.substr(mid, 1) // 홀수인 경우, substr(mid, 1) , substr은 첫번째 인덱스에서 부터 몇개까지 자를지 뒤에 선택
+           if(s.length%2 == 1) answer=s.substr(mid, 1) // 홀수인 경우, substr(mid, 1) , substr은 첫번째 인덱스에서 부터 몇개까지 자를지 뒤에 선택함
            else answer = s.substr(mid-1, 2) // 짝수일 경우, substr(mid-1, 2) 
 
            return answer;
