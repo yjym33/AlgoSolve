@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>보이는 학생</title>
+</head>
+<body>
+    <script>
+        function solution(arr) {
+            let answer=1;
+            max = arr[0]
+            for (let i=1; i<arr.length; i++) {
+                if(arr[i]>max) {
+                    answer++;
+                    max = arr[i];
+                }
+            }
+
+            return answer;
+        }
+        let arr = [130, 135, 148, 140, 145, 150, 150, 153]
+        console.log(solution(arr))
+    </script>
+</body>
+</html>
+
+<!-- 선생님이 N명의 학생을 일렬로 세웠을때, 일렬로 세운 학생들의 키가 앞에서부터 순서대로 주어질때, 맨앞에서 선생님이 볼수 있는 학생의 수를 구하는 문제 -->
