@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>점수계산</title>
+</head>
+<body>
+    <script>
+        function solution(arr) {
+            let answer=0;
+            cnt = 0;
+            for (let x of arr) {
+                if(x === 1) { // x가 1일떄는 cnt ++, answer에 누적
+                    cnt++;
+                    answer+=cnt;
+                }
+                else cnt=0; // x가 0일때는 cnt를 0으로 초기화
+            }
+
+            return answer;
+        }
+        let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
+        console.log(solution(arr))
+    </script>
+</body>
+</html>
+
+<!--  
+    O,X 문제에서 문제를 맞을경우 1 틀릴경우 0으로 기록을하고 문제를 연속적으로 맞았을때 1, 2, 3 ...점씩 얻게 된다고 할떄
+    시험 문제의 채점결과가 주어졌을 때, 총 점수를 구하는 프로그램을 작성하는 문제
+-->
