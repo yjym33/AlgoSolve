@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>등수 구하기</title>
+</head>
+<body>
+    <script>
+        function solution(arr) {
+            let n = arr.length;
+            let answer=Array.from({length:n}, () => 1); // 배열을 1로 초기화 , Array.from()
+            for (let i=0; i<n; i++) {
+                for(j=0; j<n; j++) {
+                    if(arr[j]>arr[i]) answer[i]++; // a[j]>a[i] 인 경우 등수를 떨친다. (전부 1로 초기화 한후 a[j]>a[i]인 경우 한등수씩 내리는것)
+                }
+            }
+            return answer;
+        }
+        let arr = [87, 89, 92, 100, 76]
+        console.log(solution(arr))
+    </script>
+</body>
+</html>
+
+<!--  
+    N명의 학생의 국어점수가 입력되면 각 학생의 등수를 입력된 순서대로 출력하는 프로그램을 작성하세요.
+-->
