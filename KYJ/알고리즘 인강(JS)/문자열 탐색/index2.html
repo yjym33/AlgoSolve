@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>유효한 팰린드롬</title>
+</head>
+<body>
+    <script>
+        function solution(s) {
+            let answer="YES";
+            s = s.toLowerCase().replace(/[^a-z]/g, ''); // 정규 표현식 ^(부정, 아닌것들), a-z : a부터 z까지
+            if(s.split('').reverse().join()!== s) return "NO"; // 뒤집은 글자가 같지 않으면 NO 출력
+
+            return answer;
+        }
+        let str = "found7 time: study; Yduts; emiU 7Dnuof;";
+        console.log(solution(str));
+    </script>
+</body>
+</html>
+
+<!-- 정규 표현식 이용한 방법 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>유효한 팰린드롬</title>
+</head>
+<body>
+    <script>
+        function solution(s) {
+           let answer = "YES";
+           let res ="";
+           s = s.toLowerCase();
+           for (let x of s) {
+               let num = x.charCodeAt();
+               if (num>=97 && num<=122) res+=x;
+           }
+           if(res.split('').reverse().join('')!== res) return "NO";
+           return answer;
+        }
+        let str = "found7 time: study; Yduts; emiU 7Dnuof;";
+        console.log(solution(str));
+    </script>
+</body>
+</html>
+
+<!-- 아스키 코드를 이용한 풀이 -->
