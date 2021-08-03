@@ -9,7 +9,7 @@
         function solution(str) {
             let answer="";
             for(let x of str) {
-                if(!isNaN(x)) answer+=x // x가 숫자면 answer에 누적
+                if(!isNaN(x)) answer+=x // x가 숫자면 answer에 누적, isNaN(숫자가 아닌 경우)
             }
             return parseInt(answer);
         }
