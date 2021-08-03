@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>숫자만 추출</title>
+</head>
+<body>
+    <script>
+        function solution(str) {
+            let answer="";
+            for(let x of str) {
+                if(!isNaN(x)) answer+=x // x가 숫자면 answer에 누적
+            }
+            return parseInt(answer);
+        }
+
+        let str = "g0en2T0s8eSoft"
+        console.log(solution(str))
+    </script>
+</body>
+</html>
+
