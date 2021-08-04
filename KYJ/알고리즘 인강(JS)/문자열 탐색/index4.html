@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가장 짧은 문자거리</title>
+</head>
+<body>
+    <script>
+       function solution(s, t) {
+           let answer=[];
+           let p = 1000;
+           for(let x of s) { // 왼쪽기준
+               if(x===t) {
+                   p=0
+                   answer.push(p);
+               }
+               else {
+                   p++;
+                   answer.push(p);
+               }
+           }
+           p=1000;
+           for(let i=s.length-1; i>=0; i--) { // 오른쪽 기준
+               if(s[i]===t) {
+                p=0;
+               }
+               else {
+                   p++;
+                   answer[i]=Math.min(answer[i], p)
+               }
+           }
+
+           return answer;
+       }
+
+       let str ="teachermode";
+       console.log(solution(str, 'e'));
+    </script>
+</body>
+</html>
+
+<!-- 왼쪽기준으로 t까지의 값과, 오른쪽 기준으로 t까지의 값을 비교해서 더 작은 수를 찾아서 입력하는 문제 -->
+
