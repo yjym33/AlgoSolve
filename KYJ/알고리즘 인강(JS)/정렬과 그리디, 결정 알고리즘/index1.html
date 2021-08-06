@@ -9,11 +9,11 @@
         function solution(arr) {
             let answer=arr; // 얕은 복사
             for(let i=0; i<arr.length-1; i++) {
-                let idx=i;
+                let idx=i; // idx를 선언
                 for(let j=i+1; j<arr.length; j++) {
-                    if(arr[j]<arr[idx]) idx=j;
+                    if(arr[j]<arr[idx]) idx=j; // arr[idx]가 arr[j] 보다 클 경우 j를 idx에 할당
                 }
-                [arr[i], arr[idx]] = [arr[idx], arr[i]];
+                [arr[i], arr[idx]] = [arr[idx], arr[i]]; // arr[idx]와 arr[i]를 교환
             }
 
 
