@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자릿수의 합</title>
+</head>
+<body>
+    <script>
+       function solution(n, arr) {
+           let answer, max=Number.MIN_SAFE_INTEGER;
+           for(let x of arr) {
+               let sum = x.toString().split('').reduce((a, b)=> a+Number(b), 0); // 내장함수 사용 >> 숫자를 문자화하여 배열에 넣음, ** reduce 함수 중요**
+            //    let sum=0, tmp=x; // 합계(sum)과 임시변수(tmp) 설정
+            //    while(tmp) {
+            //        sum += (tmp%10); // 자릿수의 합을 넣을 sum
+            //        tmp = Math.floor(tmp/10); 
+            //    }
+               if(sum>max) { 
+                   max = sum;
+                   answer = x;
+               }
+               else if(sum === max) {
+                   if(x>answer) answer=x;
+               }
+           }
+
+           return answer;
+       }
+       let arr = [128, 460, 603, 40, 521, 137, 123];
+       console.log(solution(7, arr));
+    </script>
+</body>
+</html>
